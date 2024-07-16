@@ -3,39 +3,775 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-	<style>
-table.t1 {
-  border: 1px solid black;
-  width:100%;
-height:100px;
-margin :auto
-
-}img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
-}</style>
+    <title>Semester Grade Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align: center;
+        }
+        .header img {
+            width: 100px;
+        }
+        .header h1, .header h2 {
+            margin: 0;
+        }
+        .info-table, .grade-table, .note-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .info-table th, .info-table td,
+        .grade-table th, .grade-table td,
+        .note-table th, .note-table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        .grade-table th {
+            background-color: #f2f2f2;
+        }
+        .note {
+            font-size: 0.9em;
+        }
+        .note th, .note td {
+            border: none;
+        }
+    </style>
 </head>
 <body>
-   <table class="t1">
-<tr>
-	<td><img src="C:\Users\Student\Downloads\aboutlogo.jpg" alt="cant open"></td>
-	<td>Sanjay Ghodawat Univerity</td>
-	<td><img src="C:\Users\Student\Downloads\aboutlogo.jpg" alt="cant open"></td>
-</tr>
 
-</table><br>
-<table>
-<tr>
-<td>PRN:</td>
-<td>Name:</td>
-<td>Class:</td>
-</tr>
-</table>
-<tr>
-<tr
-<table>
+    <div class="header">
+        <img src="logo.png" alt="SGU Logo">
+        <h1>Sanjay Ghodawat University, Kolhapur</h1>
+        <h2>Established as a state private university under Govt of Maharashtra</h2>
+        <p>Empowering Lives Globally!</p>
+    </div>
+
+    <h2>Semester Grade Card (School of Technology)</h2>
+
+    <table class="info-table">
+        <tr>
+            <th>Name</th>
+            <td>ABC XYZ PQR</td>
+            <th>Program</th>
+            <td>Bachelor of Computer Science & Engineering</td>
+        </tr>
+        <tr>
+            <th>PRN</th>
+            <td>21ST111112222</td>
+            <th>Semester ID</th>
+            <td>SEM-V(WINTER-23)</td>
+        </tr>
+    </table>
+
+    <table class="grade-table">
+        <tr>
+            <th>Sr.No</th>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>CR</th>
+            <th>GL</th>
+            <th>GP</th>
+            <th>CP</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>CST2501</td>
+            <td>Design and Analysis of Algorithms</td>
+            <td>3</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>CST2502</td>
+            <td>Compiler Design</td>
+            <td>3</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>CST2503</td>
+            <td>Database Management Systems</td>
+            <td>3</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>CST25043</td>
+            <td>Program Vertical - I (Data Mining and Warehousing)</td>
+            <td>3</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>CST2505</td>
+            <td>Design and Analysis of Algorithms Laboratory</td>
+            <td>1</td>
+            <td>O</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>CST2506</td>
+            <td>Compiler Design Laboratory</td>
+            <td>1</td>
+            <td>O</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>CST2507</td>
+            <td>Database Management Systems Laboratory</td>
+            <td>1</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>CST25083</td>
+            <td>Program Vertical I (Data Mining and Warehousing Laboratory)</td>
+            <td>1</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>CST2509</td>
+            <td>Software Proficiency Program - I</td>
+            <td>4</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>36</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>CST2612</td>
+            <td>Foreign Language</td>
+            <td>0</td>
+            <td>Satisfactory</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td colspan="6">Total</td>
+            <td>182</td>
+        </tr>
+    </table>
+
+    <p>SGPA : 9.10 - PASS</p>
+    <p>CGPA : 9.37</p>
+
+    <table class="note-table note">
+        <tr>
+            <td colspan="7">
+                CR : Credits, GL: Grade Letter, GP: Grade Point, CP: Credit Point = CR*GP<br>
+                Semester Grade Point Average (SGPA) = (Total CP/Total CR) of present Semester<br>
+                Cummulative Grade Point Average (CGPA) = (Total CP/Total CR) of All Semester<br>
+                RRA : Your Result is Reserved for Administrative Reason, Please Contact COE and Register Office Immediately.<br>
+                RRL : Due to Lapses Reason.<br>
+                * : Ordanance for Grace Marks.<br>
+                $ : RE-ESE Subject.<br>
+                @ : Credits yet to be Earned.
+            </td>
+        </tr>
+    </table>
+
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester Grade Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align: center;
+        }
+        .header img {
+            width: 100px;
+        }
+        .header h1, .header h2 {
+            margin: 0;
+        }
+        .info-table, .grade-table, .note-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .info-table th, .info-table td,
+        .grade-table th, .grade-table td,
+        .note-table th, .note-table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        .grade-table th {
+            background-color: #f2f2f2;
+        }
+        .note {
+            font-size: 0.9em;
+        }
+        .note th, .note td {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="logo.png" alt="SGU Logo">
+        <h1>Sanjay Ghodawat University, Kolhapur</h1>
+        <h2>Established as a state private university under Govt of Maharashtra</h2>
+        <p>Empowering Lives Globally!</p>
+    </div>
+
+    <h2>Semester Grade Card (School of Technology)</h2>
+
+    <table class="info-table">
+        <tr>
+            <th>Name</th>
+            <td>ABC XYZ PQR</td>
+            <th>Program</th>
+            <td>Bachelor of Computer Science & Engineering</td>
+        </tr>
+        <tr>
+            <th>PRN</th>
+            <td>21ST111112222</td>
+            <th>Semester ID</th>
+            <td>SEM-V(WINTER-23)</td>
+        </tr>
+    </table>
+
+    <table class="grade-table">
+        <tr>
+            <th>Sr.No</th>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>CR</th>
+            <th>GL</th>
+            <th>GP</th>
+            <th>CP</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>CST2501</td>
+            <td>Design and Analysis of Algorithms</td>
+            <td>3</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>CST2502</td>
+            <td>Compiler Design</td>
+            <td>3</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>CST2503</td>
+            <td>Database Management Systems</td>
+            <td>3</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>CST25043</td>
+            <td>Program Vertical - I (Data Mining and Warehousing)</td>
+            <td>3</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>CST2505</td>
+            <td>Design and Analysis of Algorithms Laboratory</td>
+            <td>1</td>
+            <td>O</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>CST2506</td>
+            <td>Compiler Design Laboratory</td>
+            <td>1</td>
+            <td>O</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>CST2507</td>
+            <td>Database Management Systems Laboratory</td>
+            <td>1</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>CST25083</td>
+            <td>Program Vertical I (Data Mining and Warehousing Laboratory)</td>
+            <td>1</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>CST2509</td>
+            <td>Software Proficiency Program - I</td>
+            <td>4</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>36</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>CST2612</td>
+            <td>Foreign Language</td>
+            <td>0</td>
+            <td>Satisfactory</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td colspan="6">Total</td>
+            <td>182</td>
+        </tr>
+    </table>
+
+    <p>SGPA : 9.10 - PASS</p>
+    <p>CGPA : 9.37</p>
+
+    <table class="note-table note">
+        <tr>
+            <td colspan="7">
+                CR : Credits, GL: Grade Letter, GP: Grade Point, CP: Credit Point = CR*GP<br>
+                Semester Grade Point Average (SGPA) = (Total CP/Total CR) of present Semester<br>
+                Cummulative Grade Point Average (CGPA) = (Total CP/Total CR) of All Semester<br>
+                RRA : Your Result is Reserved for Administrative Reason, Please Contact COE and Register Office Immediately.<br>
+                RRL : Due to Lapses Reason.<br>
+                * : Ordanance for Grace Marks.<br>
+                $ : RE-ESE Subject.<br>
+                @ : Credits yet to be Earned.
+            </td>
+        </tr>
+    </table>
+
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester Grade Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align: center;
+        }
+        .header img {
+            width: 100px;
+        }
+        .header h1, .header h2 {
+            margin: 0;
+        }
+        .info-table, .grade-table, .note-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .info-table th, .info-table td,
+        .grade-table th, .grade-table td,
+        .note-table th, .note-table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        .grade-table th {
+            background-color: #f2f2f2;
+        }
+        .note {
+            font-size: 0.9em;
+        }
+        .note th, .note td {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="logo.png" alt="SGU Logo">
+        <h1>Sanjay Ghodawat University, Kolhapur</h1>
+        <h2>Established as a state private university under Govt of Maharashtra</h2>
+        <p>Empowering Lives Globally!</p>
+    </div>
+
+    <h2>Semester Grade Card (School of Technology)</h2>
+
+    <table class="info-table">
+        <tr>
+            <th>Name</th>
+            <td>ABC XYZ PQR</td>
+            <th>Program</th>
+            <td>Bachelor of Computer Science & Engineering</td>
+        </tr>
+        <tr>
+            <th>PRN</th>
+            <td>21ST111112222</td>
+            <th>Semester ID</th>
+            <td>SEM-V(WINTER-23)</td>
+        </tr>
+    </table>
+
+    <table class="grade-table">
+        <tr>
+            <th>Sr.No</th>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>CR</th>
+            <th>GL</th>
+            <th>GP</th>
+            <th>CP</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>CST2501</td>
+            <td>Design and Analysis of Algorithms</td>
+            <td>3</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>CST2502</td>
+            <td>Compiler Design</td>
+            <td>3</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>CST2503</td>
+            <td>Database Management Systems</td>
+            <td>3</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>CST25043</td>
+            <td>Program Vertical - I (Data Mining and Warehousing)</td>
+            <td>3</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>CST2505</td>
+            <td>Design and Analysis of Algorithms Laboratory</td>
+            <td>1</td>
+            <td>O</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>CST2506</td>
+            <td>Compiler Design Laboratory</td>
+            <td>1</td>
+            <td>O</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>CST2507</td>
+            <td>Database Management Systems Laboratory</td>
+            <td>1</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>CST25083</td>
+            <td>Program Vertical I (Data Mining and Warehousing Laboratory)</td>
+            <td>1</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>CST2509</td>
+            <td>Software Proficiency Program - I</td>
+            <td>4</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>36</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>CST2612</td>
+            <td>Foreign Language</td>
+            <td>0</td>
+            <td>Satisfactory</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td colspan="6">Total</td>
+            <td>182</td>
+        </tr>
+    </table>
+
+    <p>SGPA : 9.10 - PASS</p>
+    <p>CGPA : 9.37</p>
+
+    <table class="note-table note">
+        <tr>
+            <td colspan="7">
+                CR : Credits, GL: Grade Letter, GP: Grade Point, CP: Credit Point = CR*GP<br>
+                Semester Grade Point Average (SGPA) = (Total CP/Total CR) of present Semester<br>
+                Cummulative Grade Point Average (CGPA) = (Total CP/Total CR) of All Semester<br>
+                RRA : Your Result is Reserved for Administrative Reason, Please Contact COE and Register Office Immediately.<br>
+                RRL : Due to Lapses Reason.<br>
+                * : Ordanance for Grace Marks.<br>
+                $ : RE-ESE Subject.<br>
+                @ : Credits yet to be Earned.
+            </td>
+        </tr>
+    </table>
+
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester Grade Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align: center;
+        }
+        .header img {
+            width: 100px;
+        }
+        .header h1, .header h2 {
+            margin: 0;
+        }
+        .info-table, .grade-table, .note-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .info-table th, .info-table td,
+        .grade-table th, .grade-table td,
+        .note-table th, .note-table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        .grade-table th {
+            background-color: #f2f2f2;
+        }
+        .note {
+            font-size: 0.9em;
+        }
+        .note th, .note td {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="logo.png" alt="SGU Logo">
+        <h1>Sanjay Ghodawat University, Kolhapur</h1>
+        <h2>Established as a state private university under Govt of Maharashtra</h2>
+        <p>Empowering Lives Globally!</p>
+    </div>
+
+    <h2>Semester Grade Card (School of Technology)</h2>
+
+    <table class="info-table">
+        <tr>
+            <th>Name</th>
+            <td>ABC XYZ PQR</td>
+            <th>Program</th>
+            <td>Bachelor of Computer Science & Engineering</td>
+        </tr>
+        <tr>
+            <th>PRN</th>
+            <td>21ST111112222</td>
+            <th>Semester ID</th>
+            <td>SEM-V(WINTER-23)</td>
+        </tr>
+    </table>
+
+    <table class="grade-table">
+        <tr>
+            <th>Sr.No</th>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>CR</th>
+            <th>GL</th>
+            <th>GP</th>
+            <th>CP</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>CST2501</td>
+            <td>Design and Analysis of Algorithms</td>
+            <td>3</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>CST2502</td>
+            <td>Compiler Design</td>
+            <td>3</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>CST2503</td>
+            <td>Database Management Systems</td>
+            <td>3</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>CST25043</td>
+            <td>Program Vertical - I (Data Mining and Warehousing)</td>
+            <td>3</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>CST2505</td>
+            <td>Design and Analysis of Algorithms Laboratory</td>
+            <td>1</td>
+            <td>O</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>CST2506</td>
+            <td>Compiler Design Laboratory</td>
+            <td>1</td>
+            <td>O</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>CST2507</td>
+            <td>Database Management Systems Laboratory</td>
+            <td>1</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>CST25083</td>
+            <td>Program Vertical I (Data Mining and Warehousing Laboratory)</td>
+            <td>1</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>CST2509</td>
+            <td>Software Proficiency Program - I</td>
+            <td>4</td>
+            <td>A+</td>
+            <td>9</td>
+            <td>36</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>CST2612</td>
+            <td>Foreign Language</td>
+            <td>0</td>
+            <td>Satisfactory</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td colspan="6">Total</td>
+            <td>182</td>
+        </tr>
+    </table>
+
+    <p>SGPA : 9.10 - PASS</p>
+    <p>CGPA : 9.37</p>
+
+    <table class="note-table note">
+        <tr>
+            <td colspan="7">
+                CR : Credits, GL: Grade Letter, GP: Grade Point, CP: Credit Point = CR*GP<br>
+                Semester Grade Point Average (SGPA) = (Total CP/Total CR) of present Semester<br>
+                Cummulative Grade Point Average (CGPA) = (Total CP/Total CR) of All Semester<br>
+                RRA : Your Result is Reserved for Administrative Reason, Please Contact COE and Register Office Immediately.<br>
+                RRL : Due to Lapses Reason.<br>
+                * : Ordanance for Grace Marks.<br>
+                $ : RE-ESE Subject.<br>
+                @ : Credits yet to be Earned.
+            </td>
+        </tr>
+    </table>
+
+    
 </body>
 </html>
